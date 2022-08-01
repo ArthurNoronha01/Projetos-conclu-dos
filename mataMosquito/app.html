@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mataMosquito.css">
+    <script src="mataMosquito.js"></script>
+</head>
+<body onresize="redimensionarTela()">
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1" src="imagens/coracao_cheio.png" alt="coracao_vazio" \>
+            <img id="v2" src="imagens/coracao_cheio.png" alt="coracao_cheio" \>
+            <img id="v3" src="imagens/coracao_cheio.png" alt="coracao_cheio" \>
+        </div>
+        <div class="cronometro">Tempo Restante: <span id="cronometro"></span></div>
+    </div>
+    <script>
+        //esse código está aqui para já colocar o valor inicial do tempo antes de haver a decementação, então começa com o valor inicial de tempo e só depois, quando ler o próximo bloco de código que vai começar a decrementação
+        document.getElementById('cronometro').innerHTML = `${tempo}`
+
+        let criarMosca = setInterval(function(){
+            posicaoRandom()
+        },
+        criarMosquitoTempo)
+        //o tempo passado é aquele definido pelo nível do jogador
+    </script>
+</body>
+</html>
